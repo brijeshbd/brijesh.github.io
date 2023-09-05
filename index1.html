@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brijesh Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/36af8396ce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" , class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p> Software Engineer </p>
+                <h1> Hi, I'm <span>Brijesh</span> </h1><br>
+                <h3>And I am <span class="type-writer"></span></h3>
+            </div>
+
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Experienced Java Developer with a specialization in Spring Boot, offering a track record of 1
+                        year and 8 months at Kristal.AI. Adept in developing robust and scalable applications, my
+                        proficiency spans across Spring Boot, MVC architecture, microservices, PostgreSQL, Redis, Apache
+                        Kafka, and Tableau. Driven by a passion for crafting efficient solutions, I bring a solid
+                        foundation of skills to drive impactful outcomes in software development.</p>
+                    <div class="tab-titles">
+                        <!-- <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> -->
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- <div class="tab-contents active-tab", id="skills">
+                        <ul>
+                            <li><span>Java</span><br> Developer</li>
+                            <li><span>Web Development</span><br> Web app Development</li>
+                        </ul>
+                    </div> -->
+
+                    <div class="tab-contents active-tab" , id="experience">
+                        <ul>
+                            <li>
+                                <h4><span>Kristal.AI</span></h4>
+                            </li>
+                            <li> Jan 2022 – present | Bengaluru, India </li>
+                            <li> Directed the management of a vital
+                                microservice within the organization, propelling
+                                a remarkable 35% revenue escalation through
+                                adept utilization of Tableau, Redis, and
+                                microservices. </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" , id="education">
+                        <ul>
+                            <li><span>2017-2020 : 7.5 </span><br> Veer Narmad South Gujarat University (B.Sc.I.T.)</li>
+                            <li><span>2020-2022 : 7.8 </span><br> Dhirubhai Ambani Institute of Information and
+                                Communication Technology (M.Sc.I.T.)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- skills -->
+
+    <div id="skills">
+
+        <div class="container">
+            <h1 class="subtitle">Skills</h1>
+                <ul id="skill-list">
+                    <li>
+                        <span class="skill-name">Java</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="skill-name">Spring Boot</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="skill-name">PostgreSQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="skill-name">Git</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="skill-name">HTML5</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="skill-name">Apache Kafka</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="skill-name">Redis</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="skill-name">Solr</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 60%;"></div>
+                        </div>
+                    </li>
+                    <!-- Add more skills as needed -->
+                </ul>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SERVICES -->
+
+    <div id="services">
+
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Web Application </h2>
+                    <p>I specialize in developing customized web applications that cater to specific business needs. Our applications are user-friendly, scalable, and designed to streamline processes, enhance user experiences, and drive results.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crown"></i>
+                    <h2>Desktop Application</h2>
+                    <p>I excel in crafting tailored desktop applications designed to address unique business requirements. Our desktop solutions are user-centric, robust, and engineered to optimize operations, ensuring efficiency and productivity.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Mobile Application</h2>
+                    <p>I specialize in creating personalized mobile applications that cater to your specific needs. Our mobile apps are user-friendly, highly responsive, and crafted to elevate user engagement and deliver exceptional results.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Question Paper Generator</h3>
+                        <p>Designed a web application that efficiently produced randomized descriptive question papers in PDF format, resulting in a notable 40% decrease in time spent on paper creation.</p>
+                        <a href="https://github.com/brijeshbd" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Report Generation and Distribution</h3>
+                        <p>Spearheaded the development of an efficient report generation system, reducing manual effort by 80%. Daily reports are now available at 6:00 PM, enhancing data accessibility for clients and staff.</p>
+                        <a href="https://github.com/brijeshbd" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Secure Authentication System</h3>
+                        <p>Implemented role-based access control, resulting in a 40% decrease in unauthorized access incidents, fortifying data security.</p>
+                        <a href="https://github.com/brijeshbd" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/brijeshbd" target="_blank" class="btn"> See more</a>
+        </div>
+    </div>
+
+
+    <!-- CONTACT -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> bhalalabrij73@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-8200283401</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-solid fa-code-branch"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name ..." required>
+                        <input type="email" name="Email" placeholder="Your Email..." required>
+                        <textarea name="Message" placeholder="Your Message..." rows="6"></textarea>
+                        <button type="submit" class="btn btn2"> Submit </button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright © Brijesh. <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+    <script>
+        var sideMenu = document.getElementById("sidemenu")
+        function openMenu() {
+            sideMenu.style.right = "0";
+        }
+        function openMenu() {
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzj8pLs55DEFZIIZFI051sOMgsV9SjAB7voI9JiybDCJq4JTGfcIhytU_7GSGV2bcBM_A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Sucessfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
