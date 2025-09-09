@@ -1,3 +1,11 @@
+/* Ensure consistent font for experience/education section headers */
+.tab-contents ul li h4 {
+    font-size: 22px;
+    font-family: 'Tahoma', sans-serif;
+    font-weight: 600;
+    color: #ffA500;
+    margin-bottom: 4px;
+}
 *{
     margin: 0;
     padding: 0;
@@ -90,12 +98,18 @@ nav ul li a:hover::after{
 }
 .about-col-1 img {
     width: 100%;
-    border-radius: 15px;
+    height: 465px;
+    object-fit: cover;
+    border-radius: 13px;
+    transform: translateY(10px);
 }
 
 .about-col-2{
     flex-basis: 60%;
-
+    min-height: 610px; /* Adjust as needed to match photo height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .sub-title{
@@ -140,6 +154,7 @@ nav ul li a:hover::after{
 }
 .tab-contents {
     display: none;
+    min-height: 120px; /* Adjust as needed for your content */
 }
 
 .tab-contents.active-tab{
